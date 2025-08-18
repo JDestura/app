@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Hash, Volume2, Users, Pin, Bell, Search, Inbox, QuestionMark, Plus, Gift, Smile, Paperclip, Send } from 'lucide-react';
+import { Hash, Volume2, Users, Pin, Bell, Search, Inbox, HelpCircle, Plus, Gift, Smile, Paperclip, Send } from 'lucide-react';
 import { cn } from '../lib/utils';
 
 const Message = ({ message, isFirstInGroup, showAvatar }) => {
