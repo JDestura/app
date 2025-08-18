@@ -4,9 +4,9 @@ import os
 from datetime import timedelta
 from bson import ObjectId
 
-from ..models.User import UserCreate, UserLogin, UserResponse, UserInDB
-from ..auth.jwt_handler import create_access_token
-from ..auth.auth_utils import hash_password, verify_password, generate_discriminator, get_current_user
+from models.User import UserCreate, UserLogin, UserResponse, UserInDB
+from auth.jwt_handler import create_access_token
+from auth.auth_utils import hash_password, verify_password, generate_discriminator, get_current_user
 
 router = APIRouter(prefix="/auth", tags=["authentication"])
 
