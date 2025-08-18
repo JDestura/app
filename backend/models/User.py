@@ -35,7 +35,7 @@ class UserLogin(BaseModel):
 class UserUpdate(BaseModel):
     username: Optional[str] = Field(None, min_length=2, max_length=32)
     avatar: Optional[str] = None
-    status: Optional[str] = Field(None, regex="^(online|idle|dnd|offline)$")
+    status: Optional[str] = Field(None, pattern="^(online|idle|dnd|offline)$")
 
 class UserResponse(UserBase):
     id: PyObjectId = Field(default_factory=PyObjectId, alias="_id")
