@@ -5,8 +5,8 @@ import os
 from bson import ObjectId
 from datetime import datetime
 
-from ..models.Message import MessageCreate, MessageResponse, MessageUpdate, MessageWithAuthor
-from ..auth.auth_utils import get_current_user
+from models.Message import MessageCreate, MessageResponse, MessageUpdate, MessageWithAuthor
+from auth.auth_utils import get_current_user
 
 router = APIRouter(prefix="/messages", tags=["messages"])
 
