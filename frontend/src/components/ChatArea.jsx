@@ -144,7 +144,7 @@ const ChatArea = ({ activeChannel, channelInfo, messages, onSendMessage }) => {
           )}
           <Search className="w-5 h-5 text-gray-400 cursor-pointer hover:text-white transition-colors" />
           <Inbox className="w-5 h-5 text-gray-400 cursor-pointer hover:text-white transition-colors" />
-          <QuestionMark className="w-5 h-5 text-gray-400 cursor-pointer hover:text-white transition-colors" />
+          <HelpCircle className="w-5 h-5 text-gray-400 cursor-pointer hover:text-white transition-colors" />
         </div>
       </div>
 
