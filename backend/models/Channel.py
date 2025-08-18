@@ -20,7 +20,7 @@ class PyObjectId(ObjectId):
 
 class ChannelBase(BaseModel):
     name: str = Field(..., min_length=1, max_length=100)
-    type: str = Field(..., regex="^(text|voice)$")
+    type: str = Field(..., pattern="^(text|voice)$")
     topic: Optional[str] = Field(None, max_length=1024)
 
 class ChannelCreate(ChannelBase):
