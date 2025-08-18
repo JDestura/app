@@ -23,7 +23,7 @@ class UserBase(BaseModel):
     email: EmailStr
     discriminator: str = Field(..., min_length=4, max_length=4)
     avatar: Optional[str] = None
-    status: str = Field(default="online", regex="^(online|idle|dnd|offline)$")
+    status: str = Field(default="online", pattern="^(online|idle|dnd|offline)$")
 
 class UserCreate(UserBase):
     password: str = Field(..., min_length=6)
