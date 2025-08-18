@@ -4,8 +4,8 @@ from typing import List
 import os
 from bson import ObjectId
 
-from ..models.Channel import ChannelCreate, ChannelResponse, ChannelUpdate
-from ..auth.auth_utils import get_current_user
+from models.Channel import ChannelCreate, ChannelResponse, ChannelUpdate
+from auth.auth_utils import get_current_user
 
 router = APIRouter(prefix="/channels", tags=["channels"])
 
